@@ -1,4 +1,7 @@
 use std::boxed::Box;
+mod two_sum;
+use crate::Solution;
+
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
@@ -59,4 +62,6 @@ fn main() {
 
     let result = Solution::add_two_numbers(l1, l2);
     println!("{:?}", result);
+
+    two_sum::run();
 }
